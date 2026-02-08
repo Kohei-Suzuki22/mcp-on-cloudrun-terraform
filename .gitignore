@@ -1,0 +1,8 @@
+local_env.tf
+.terraform/*
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl.unlocked
+*.tfvars
+LICENSE.txt

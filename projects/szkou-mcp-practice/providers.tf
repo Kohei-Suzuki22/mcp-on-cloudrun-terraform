@@ -8,9 +8,6 @@ terraform {
 }
 
 provider "google" {
-  user_project_override                         = true
-  billing_project                               = local.billing_project
-  project                                       = "szkou-mcp-practice"
   add_terraform_attribution_label               = true
   terraform_attribution_label_addition_strategy = "PROACTIVE"
   access_token                                  = data.google_service_account_access_token.tf_access_token.access_token
@@ -22,7 +19,6 @@ provider "google" {
 
   region = "asia-northeast1"
 }
-
 
 provider "google" {
   alias = "impersonate"
